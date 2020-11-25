@@ -15,7 +15,8 @@
             echo "<a href='ChocolatePage.php?chocoID=1'>Buy page</a><br>";
             echo "<a href='ChocolateStockPage.php?chocoID=1'>Add Stock page</a><br>";
             echo "<a href='action_logout.php'>LOGOUT</a><br>";
-            echo "<a href='DashboardPage.php'>Dashboard page</a>";
+            echo "<a href='DashboardPage.php'>Dashboard page</a><br>";
+            echo "<a href='ChocolateAddNewPage.php'>add new chocolate page</a>";
         }    
         else{
             echo "belum login<br>";

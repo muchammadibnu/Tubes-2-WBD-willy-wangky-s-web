@@ -37,3 +37,55 @@ nav input[type=search] {
     margin-top: 8px;
     width: 300px;
 }
+
+
+.card{
+    padding: 10px 45px 30px 45px;
+    background: #FFFFFF;
+    max-width: 600px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.281);
+    border-radius: 10px;
+  
+    text-align: left;
+   
+}
+
+.card p{
+    font-size: 15px;
+    padding: 1px;
+    text-align: left;
+}
+
+.card input{
+    outline: 0;
+    border-radius: 10px;
+    background: #F2F2F2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.card button{
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: 0;
+    border-radius: 10px;
+    background: #2b3147;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.card button:hover{
+    background-color: rgb(220, 220, 220);
+    color :#2b3147;
+}
+
+
