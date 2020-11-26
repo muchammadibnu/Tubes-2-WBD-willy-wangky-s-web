@@ -97,11 +97,11 @@ function doCheckRequest(id){
                 return true
             }
             else{
-                doCheckRequest(id)
+                setTimeout(doCheckRequest,1000,id)
             }
         }
         else if(request.readyState==4){
-            doCheckRequest(id)
+            setTimeout(doCheckRequest,1000,id)
         }
     };
     request.setRequestHeader("Content-type", "text/xml");
