@@ -2,7 +2,7 @@ function loadListMaterial(){
     const divListMaterial = document.getElementById("listMaterial");
 
     var xhr = new XMLHttpRequest();
-    var url = "http://localhost:3000/getDaftarBahan";
+    var url = "http://localhost:3000/getDaftarBahan?harga=true";
     
     xhr.open('GET', url);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');

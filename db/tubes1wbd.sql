@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 23, 2020 at 10:23 PM
+-- Generation Time: Nov 26, 2020 at 10:58 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -37,8 +37,11 @@ CREATE TABLE `cookie_data` (
 --
 
 INSERT INTO `cookie_data` (`login_string`, `username`) VALUES
+('3dd7fa030084c421b2f2de84bcabff74', 'admin'),
+('5d351a3017ebf79098dc0e2469d941bd', 'admin'),
 ('663cf1657dc63e7a374ab6231fe5366f', 'taufiq'),
-('86d09a51e17af26f3c435e84dd0ad0c8', 'ibnu');
+('8537385d85d2cf0541d24cd6c03bf34e', 'admin'),
+('c35e856c921648dd53f854c9823e044e', 'ibnu');
 
 -- --------------------------------------------------------
 
@@ -61,7 +64,9 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `name`, `price`, `sold`, `amount`, `Description`, `photo`) VALUES
-(1, 'Chocolate 2', 3000, 12, 14, 'Coklat ini merupakan coklat yang dipanggang hingga meleleh, setelah itu dibentuk lalu dibekukan kami juga kurang mengerti mengapa kami melakukan itu', 'contoh.png');
+(1, 'Chocolate 2', 3000, 48, 23, 'Coklat ini merupakan coklat yang dipanggang hingga meleleh, setelah itu dibentuk lalu dibekukan kami juga kurang mengerti mengapa kami melakukan itu', 'contoh.png'),
+(2, 'Chocolate 4', 2000, 55, 3, 'lorem ipsum', 'contoh.png'),
+(3, 'Chocolate3', 2000, 12, 12, 'lorem ipsum', 'contoh.png');
 
 -- --------------------------------------------------------
 
@@ -90,7 +95,17 @@ INSERT INTO `transaction` (`chocolate_name`, `amount`, `total_price`, `date`, `t
 ('Chocolate 2', 3, 9000, '2020-10-23', '09:58:33', 'aaaaa', 'ibnu'),
 ('Chocolate 2', 3, 9000, '2020-10-23', '09:59:17', 'aaaa', 'ibnu'),
 ('Chocolate 2', 3, 9000, '2020-10-23', '10:01:37', 'jalanananananan', 'ibnu'),
-('Chocolate 2', 6, 18000, '2020-10-23', '10:03:14', 'aaaa', 'ibnu');
+('Chocolate 2', 6, 18000, '2020-10-23', '10:03:14', 'aaaa', 'ibnu'),
+('Chocolate 2', 4, 12000, '2020-10-24', '15:20:28', 'di ITB', 'ibnu'),
+('Chocolate 2', 11, 33000, '2020-10-24', '22:34:31', 'AAAAAAAAAAAAAAAAAA', 'ibnu'),
+('Chocolate 2', 13, 39000, '2020-10-25', '10:28:29', 'dimana saja lah', 'ibnu'),
+('Chocolate 2', 3, 9000, '2020-10-25', '13:45:46', 'aaaaaaaaaaaaaaa', 'ibnu'),
+('Chocolate3', 2, 4000, '2020-11-06', '15:10:44', 'jajajajajajajajajaj', 'ibnu'),
+('Chocolate3', 2, 4000, '2020-11-06', '15:11:11', 'mdmmdmdmdmdmdmdmdmdm', 'ibnu'),
+('Chocolate 2', 5, 15000, '2020-11-06', '15:11:56', 'djjdhjdhjhdjhdjdj', 'ibnu'),
+('Chocolate3', 4, 8000, '2020-11-06', '15:14:20', 'dbjsdbjdbsjbdsjbsdj', 'ibnu'),
+('Chocolate 4', 8, 16000, '2020-11-06', '15:15:47', 'aadaddadadaadda', 'ibnu'),
+('Chocolate 4', 35, 70000, '2020-11-06', '15:18:28', 'dimana saja', 'ibnu');
 
 -- --------------------------------------------------------
 
@@ -110,6 +125,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`username`, `email`, `password`, `role`) VALUES
+('admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'admin'),
+('bebas', 'bebas@gmail.com', 'a4ce06e8e4e1b3a69a8767b5fa70ee24', 'user'),
+('hmmmmmm', 'hmmmmmm@gmail.com', 'bd1b9fda5e854f9745bd82728232c3d6', 'user'),
 ('ibnu', 'ibnu@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', 'user'),
 ('taufiq', 't@gmail.com', 'f4eff635e6dfe584a1a536dbc7718f3d', 'user');
 
@@ -147,7 +165,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

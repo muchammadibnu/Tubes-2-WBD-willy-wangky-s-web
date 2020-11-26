@@ -95,7 +95,7 @@
         </div>
     </div>
     <div class="submit">
-        <button onclick="doSubmitAdd(<?php echo $_GET["chocoID"]; ?>)">Add</button>
+        <button onclick="doSubmitAdd(<?php echo $_GET["chocoID"]; ?>, '<?php echo $row["name"]; ?>')">Add</button>
         <button onclick="location.href='ChocolateStockPage.php?chocoID=<?php echo $_GET["chocoID"];?>'">Cancel</button>
     </div>
     <script src="scripts/scriptAddStock.js"> </script>
