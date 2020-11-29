@@ -81,7 +81,7 @@ function doCheckRequest(id){
                 let amount = + document.getElementsByClassName("detail")[0].getElementsByTagName("p")[1].innerHTML;
                 xhr = new XMLHttpRequest();
                 var url = "action_AddStock.php";
-                var params = "amount=" + amount + "&id=" +id;
+                var params = "amount=" + amount + "&id=" +ids;
                 xhr.open('POST', url);
                 xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         
