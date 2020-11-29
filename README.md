@@ -40,7 +40,7 @@ XAMPP dapat diinstall melalui pranala berikut : https://www.apachefriends.org/do
 
 ### ReactJS
 1. Melihat daftar resep coklat: 13518058
-2.
+2. Navbar, Home page, create and switch router : 13518072
 3.
 ...
 
