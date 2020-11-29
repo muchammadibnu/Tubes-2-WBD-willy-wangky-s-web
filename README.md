@@ -17,8 +17,8 @@ XAMPP dapat diinstall melalui pranala berikut : https://www.apachefriends.org/do
 
 ## Perubahan Screenshot Tampilan
 ### Add New Chocolate Page
-![](screenshots/addNewChocolatePage1.png)
-![](screenshots/addNewChocolatePage2.png)
+![](screenshots/addNewChocolatePage1.jpg)
+![](screenshots/addNewChocolatePage2.jpg)
 
 ## Pembagian Tugas
 ### REST
