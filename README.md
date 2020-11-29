@@ -15,21 +15,36 @@ XAMPP dapat diinstall melalui pranala berikut : https://www.apachefriends.org/do
 3. Klik start untuk module MySql dan pastikan berjalan
 4. Buka webnya di localhost dengan port menyesuaikan Apache
 
-## Perubahan Database
-
 ## Perubahan Screenshot Tampilan
-### Add New Page
+### Add New Chocolate Page
+![](screenshots/addNewChocolatePage1.png)
+![](screenshots/addNewChocolatePage2.png)
 
 ## Pembagian Tugas
 ### REST
-1. Fungsi untuk menyambungkan antara node js dengan mysql(db.js) : 1351858, 1351868, 13518072
+1. Fungsi untuk menyambungkan antara node js dengan mysql(db.js) : 13518058, 13518068, 13518072
 2. Fungsi untuk menampilkan daftar bahan beserta harga(index.js) : 13518072
 3. Fungsi untuk menangani pembelian bahan dengan mengembalikan uang hasil kembalian/kekurangan(index.js) : 13518072
 
 ### SOAP
+1. Fungsi untuk menyambungkan antara java dengan mysql : 13518058, 13518068, 13518072
+2. Fungsi untuk login: 13518072
+3. Fungsi untuk register: 13518072
+4. Fungsi menambahkan jenis coklat baru beserta resep (kebutuhan bahan) dan harganya: 13518058
+5. Fungsi menambahkan permintaan add stock baru: 13518058
+6. Fungsi mengembalikan status dari permintaan add stock: 13518058
+7. Fungsi melakukan pembuatan coklat: 13518058
+8. Fungsi mengubah status permintaan add stock: 13518058
+9. Fungsi menambah saldo yang dimiliki pada Factory: 13518058
+10. Fungsi mengembalikan saldo yang dimiliki pada Factory: 13518058
 
 ### ReactJS
+1. Melihat daftar resep coklat: 13518058
+2.
+3.
+...
+
 
 ### Perubahan Willy Wangky’s Web
-1. Halaman Add New Chocolate: 
+1. Halaman Add New Chocolate: 13518058
 2. Halaman Add Stock: 13518072
