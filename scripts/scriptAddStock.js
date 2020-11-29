@@ -1,3 +1,4 @@
+var ids = -1
 function doAddAmountStock(maxAmount){
     let amount = + document.getElementsByClassName("detail")[0].getElementsByTagName("p")[1].innerHTML;
     if(amount+1>=10){
@@ -16,27 +17,10 @@ function doDecreaseAmountStock(event){
     }
 }
 function doSubmitAdd(id, name){
+    ids = id
     let amount = + document.getElementsByClassName("detail")[0].getElementsByTagName("p")[1].innerHTML;
-    var xhr = new XMLHttpRequest();
     if(doGiveRequest(name,amount)){
-        var url = "action_AddStock.php";
-        var params = "amount=" + amount + "&id=" +id;
-        xhr.open('POST', url);
-        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-
-        xhr.onreadystatechange = () => {
-            if(xhr.readyState == 4 && xhr.status == 200) {
-                if (xhr.responseText=="success"){
-                    alert("add stock successfull");
-                    document.location.href='index.php';
-                }
-                else{
-                    alert("Server goes wrong, Please reload again");
-                    document.location.reload();
-                }
-            }
-        }
-        xhr.send(params);
+        return
     }
 }
 
@@ -45,7 +29,7 @@ function doGiveRequest(name,amount){
                         <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
                             <S:Body>
                                 <ns2:reqAddChocolate xmlns:ns2="http://codejava.net/">`;
-    soapMessage += `                <arg0>`+"'"+name+"'"+`</arg0>`+`<arg1>`+amount+`</arg1>`;             
+    soapMessage += `                <arg0>`+name+`</arg0>`+`<arg1>`+amount+`</arg1>`;             
     soapMessage +=`              </ns2:reqAddChocolate>
                             </S:Body>
     
@@ -94,6 +78,26 @@ function doCheckRequest(id){
             res = res.getElementsByTagName("return")[0].childNodes[0].data
             console.log(res)
             if(res == "DELIVERED"){
+                let amount = + document.getElementsByClassName("detail")[0].getElementsByTagName("p")[1].innerHTML;
+                xhr = new XMLHttpRequest();
+                var url = "action_AddStock.php";
+                var params = "amount=" + amount + "&id=" +id;
+                xhr.open('POST', url);
+                xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        
+                xhr.onreadystatechange = () => {
+                    if(xhr.readyState == 4 && xhr.status == 200) {
+                        if (xhr.responseText=="success"){
+                            alert("add stock successfull");
+                            document.location.href='index.php';
+                        }
+                        else{
+                            alert("Server goes wrong, Please reload again");
+                            document.location.reload();
+                        }
+                    }
+                }
+                xhr.send(params);
                 return true
             }
             else{
